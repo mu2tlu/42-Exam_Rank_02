@@ -27,16 +27,18 @@ int main(int ac, char **av)
     
     if(ac == 2)
     {
+        int num = ft_atoi(av[1]);
+        
         while(i <= 9)
         {
-            int num = ft_atoi(av[1]);
             
             ft_putnbr(i);
             write(1, " x ", 3);
             ft_putnbr(num);
             write(1, " = ", 3);
             ft_putnbr(i * num);
-            write(1, "\n", 1);
+            if(i != 9)
+                write(1, "\n", 1);
             i++;
         }
     }
