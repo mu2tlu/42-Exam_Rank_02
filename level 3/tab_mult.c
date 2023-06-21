@@ -24,11 +24,13 @@ int ft_atoi(char *str)
 int main(int ac, char **av)
 {
     int i = 1;
-    int num = ft_atoi(av[1]);
+    
     if(ac == 2)
     {
         while(i <= 9)
         {
+            int num = ft_atoi(av[1]);
+            
             ft_putnbr(i);
             write(1, " x ", 3);
             ft_putnbr(num);
