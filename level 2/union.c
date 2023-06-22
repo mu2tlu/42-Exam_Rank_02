@@ -18,8 +18,7 @@ int	main(int ac, char **av)
 
 	if (ac == 3)
 	{
-		while (av[1][++i])
-			;
+		while (av[1][++i]);
 		while (av[2][j])
 		{
 			av[1][i] = av[2][j];
