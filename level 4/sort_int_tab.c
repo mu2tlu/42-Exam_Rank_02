@@ -1,4 +1,4 @@
-void	*sort_int_tab(int *tab, unsigned int size)
+void	sort_int_tab(int *tab, unsigned int size)
 {
 	int	i = 0, j = 0;
 	int	temp;
