@@ -13,11 +13,9 @@ unsigned char	reverse_bits(unsigned char octet)
 
 #include <stdio.h>
 
-unsigned char reverse_bits(unsigned char octet);
-
 int main()
 {
-    unsigned char value = 38; // Örnek olarak 0010 0110 değerini kullanalım
+    unsigned char value = 65; 
 
     printf("Önce: %d\n", value);
 
