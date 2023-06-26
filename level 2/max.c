@@ -5,7 +5,7 @@ int		max(int *tab, unsigned int len)
 
     if (len != 0)
     {
-        while(i + 1 <= len)
+        while(i < len)
         {
             if(max < tab[i])
                 max = tab[i];
@@ -16,10 +16,11 @@ int		max(int *tab, unsigned int len)
     return 0;
 }
 
-// #include <stdio.h>
-// int main()
-// {
+#include <stdio.h>
 
-// 	int arr[] = {-5000, -10, -5, -30};
-// 	printf("%d", max(arr, 4));
-// }
+int main()
+{
+
+	int arr[] = {-5000, -10, -54, -1};
+	printf("%d", max(arr, 4));
+}
