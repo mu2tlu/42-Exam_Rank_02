@@ -3,11 +3,19 @@
 int	*ft_range(int start, int end)
 {
 	int	i = 0;
-	int	n = end > start ? end - start + 1 : start - end + 1;
+	int	n;
+	if (end > start)
+		n = end - start + 1;
+	else
+		n = start - end + 1;
 	int	*range = (int *)malloc(sizeof(int) * n);
 	if (!range)
 		return (NULL);
-	int	s = start > end ? -1 : 1;
+	int	s;
+	if (start > end)
+		s = -1;
+	else
+		s = 1;
 	while (i < n)
 	{
 		range[i] = end;
@@ -18,16 +26,17 @@ int	*ft_range(int start, int end)
 }
 
 #include <stdio.h>
-int	main(void)
-{
-	int i = 0;
 
-	int *arr = ft_range(0, -3);
-	while (i < 8)
-	{
-		printf("%d ", arr[i]);
-		i++;
-	}
+int main()
+{
+    int i = 0;
+
+    int *arr = ft_range(0, -3);
+    while (i < 5)
+    {
+        printf("%d ", arr[i]);
+        i++;
+    }
 }
 
 /* - With (1, 3) you will return an array containing 3, 2 and 1
