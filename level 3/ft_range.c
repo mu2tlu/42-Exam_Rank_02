@@ -3,11 +3,19 @@
 int	*ft_range(int start, int end)
 {
 	int	i = 0;
-	int	n = end > start ? end - start + 1 : start - end + 1;
+	int	n;
+	if (end > start)
+		n = end - start + 1;
+	else
+		n = start - end + 1;
 	int	*range = (int *)malloc(sizeof(int) * n);
 	if (!range)
 		return (NULL);
-	int	s = start > end ? -1 : 1;
+	int	s;
+	if (start > end)
+		s = -1;
+	else
+		s = 1;
 	while (i < n)
 	{
 		range[i] = start;
