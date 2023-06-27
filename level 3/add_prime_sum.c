@@ -44,9 +44,7 @@ int main(int ac, char **av)
         while(num)
         {
             if(ft_is_prime(num))
-            {
-                sum += num;
-            }
+            	sum += num;
             num--;
         }
         ft_putnbr(sum);
