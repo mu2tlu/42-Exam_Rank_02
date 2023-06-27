@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int	*ft_range(int start, int end)
+int	*ft_rrange(int start, int end)
 {
 	int	i = 0;
 	int	n;
@@ -8,8 +8,8 @@ int	*ft_range(int start, int end)
 		n = end - start + 1;
 	else
 		n = start - end + 1;
-	int	*range = (int *)malloc(sizeof(int) * n);
-	if (!range)
+	int	*rrange = (int *)malloc(sizeof(int) * n);
+	if (!rrange)
 		return (NULL);
 	int	s;
 	if (start > end)
@@ -18,11 +18,11 @@ int	*ft_range(int start, int end)
 		s = 1;
 	while (i < n)
 	{
-		range[i] = end;
+		rrange[i] = end;
 		end -= s;
 		i++;
 	}
-	return (range);
+	return (rrange);
 }
 
 #include <stdio.h>
