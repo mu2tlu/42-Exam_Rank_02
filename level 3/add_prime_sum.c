@@ -43,7 +43,7 @@ int main(int ac, char **av)
         int sum = 0;
         while(num)
         {
-            if(is_prime(num))
+            if(ft_is_prime(num))
             {
                 sum += num;
             }
@@ -56,7 +56,7 @@ int main(int ac, char **av)
 	write(1, "\n", 1);
 }
 
-/* int is_prime(int num)
+/* int ft_is_prime(int num)
 {
     if(num <= 1)
         return(0);
