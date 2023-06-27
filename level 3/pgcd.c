@@ -3,10 +3,11 @@
 
 int main(int ac, char **av)
 {
-    int s1 = atoi(av[1]);
-    int s2 = atoi(av[2]);
     if(ac == 3)
     {
+        int s1 = atoi(av[1]);
+        int s2 = atoi(av[2]);
+        
         if(s1 > 0 && s2 > 0)
         {
             while(s1 != s2)
