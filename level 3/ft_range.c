@@ -26,6 +26,7 @@ int	*ft_range(int start, int end)
 }
 
 #include <stdio.h>
+
 int main()
 {
     int i = 0;
