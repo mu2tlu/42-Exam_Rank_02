@@ -31,7 +31,7 @@ int main()
 {
     int i = 0;
 
-    int *arr = ft_range(0, -3);
+    int *arr = ft_rrange(0, -3);
     while (i < 5)
     {
         printf("%d ", arr[i]);
