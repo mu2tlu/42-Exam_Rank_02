@@ -27,23 +27,32 @@ int main(int ac, char **av)
 
 int main(int ac, char **av)
 {
-    int flag = 0;
     int i = 1;
-    int a = atoi(av[1]);
-    int b = atoi(av[2]);
+    int num;
+    int flag = 0;
 
-    int num = a < b ? a: b;
-
-    if(ac == 3 && a > 0 && b > 0)
+    if (ac == 3)
     {
-        while (i <= num)
+        int a = atoi(av[1]);
+        int b = atoi(av[2]);
+
+        if (a < b)
+            num = a;
+        else
+            num = b;
+
+        if (a > 0 && b > 0)
         {
-            if(a % i == 0 && b % i == 0)
-                flag = i;
-            i++;
-        } 
-        if(i - 1 == num)
-            printf("%d", flag);
+            while (i <= num)
+            {
+                if (a % i == 0 && b % i == 0)
+                    flag = i;
+                i++;
+            }
+
+            if (i - 1 == num)
+                printf("%d", flag);
+        }
     }
     printf("\n");
 } */
