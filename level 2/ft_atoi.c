@@ -6,7 +6,7 @@ int	ft_atoi(const char *str)
 
     while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
         i++;
-    while (str[i] == '-')
+    if (str[i] == '-')
     {
         sign = 1 * -1;
         i++;
