@@ -10,7 +10,7 @@ int	ft_atoi(const char *str)
             sign = -1;
     while (str[i] == '+' || str[i] == '-')
         i++;
-    while (str[i] && (str[i] >= '0' && str[i] >= '9'))
+    while (str[i] && (str[i] >= '0' && str[i] <= '9'))
     {
         result  = (result  * 10) + (str[i] - '0');
         i++;
