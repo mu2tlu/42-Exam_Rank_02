@@ -24,8 +24,8 @@ void	sort_int_tab(int *tab, unsigned int size)
 
 int	main(void)
 {
-	int	i = 0;
-	int	tab[] = {0, 4, 1, 3, 2};
+	unsigned int	i = 0;
+	unsigned int	tab[] = {0, 4, 1, 3, 2};
 	sort_int_tab(tab, 5);
 	while (i < 5)
 	{
