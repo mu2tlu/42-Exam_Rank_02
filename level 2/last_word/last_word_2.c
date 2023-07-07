@@ -12,7 +12,7 @@ int	main(int ac, char **av)
 				j = i + 1;
 				i++;
 		}
-		while(av[1][j] >= 33 && av[1][j] <= 126)
+		while(av[1][j] > 32 && av[1][j] < 127)
 		{
 			write(1, &av[1][j], 1);
 			j++;
