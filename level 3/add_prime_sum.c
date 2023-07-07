@@ -23,6 +23,8 @@ int	ft_atoi(char *str)
 int ft_is_prime(int num)
 {
 	int i = 2;
+	if(num <= 1)
+        	return(0);
 	if(num < 2)
 		return 0;
 	while (i < num)
