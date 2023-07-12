@@ -20,7 +20,7 @@ int main(int ac, char **av)
                 i = 2;
             }
             else
-            i++;
+                i++;
         }   
     }
     printf("\n");
