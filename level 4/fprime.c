@@ -18,7 +18,8 @@ int main(int ac, char **av)
                     printf("*");
                 num /= i;
                 i = 2;
-            }  
+            }
+            else
             i++;
         }   
     }
