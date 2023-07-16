@@ -5,7 +5,7 @@ char	*ft_itoa(int nbr)
 	int		len = 0, n = nbr;
 
 	if (nbr == -2147483648)
-		return ("-2147483648\0");
+		return ("-2147483648");
 	if (n <= 0) // 0 & '\0' | '-' için
 		len++;
 	while (n)
