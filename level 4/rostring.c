@@ -24,13 +24,13 @@ char    **ft_split(char *str)
 
     while (str[i])
     {
-        if(str[i] > 32)
+        if(str[i] > 32 && str[i])
         {
             split[a] = (char *)malloc(sizeof(char) * len);
             
             b = 0;    
             
-            while (str[i] > 32)
+            while (str[i] > 32 && str[i])
             {
                 split[a][b] = str[i];
                 b++;
