@@ -16,7 +16,7 @@ int main()
             write(1, "fizzbuzz", 8);
         else if (i % 3 == 0)
             write(1, "fizz", 4);
-        else if (i % 3 == 0)
+        else if (i % 5 == 0)
             write(1, "buzz", 4);
         else
             ft_print(i);
