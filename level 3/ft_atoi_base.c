@@ -24,7 +24,7 @@ int	ft_atoi_base(const char *str, int str_base)
 	int	i = 0;
 	int	result = 0;
 	int	sign = 1;
-	while (str[i] <= 32)
+	while (str[i] <= 32 && str[i])
 		i++;
 	if (str[i] == '-')
 	{
